@@ -1,0 +1,69 @@
+.last-chance {
+  position: relative;
+  height: 533px;
+  background-image: url('../images/pure-galaxy.webp');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-inline: 12px;
+  color: #181818;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last-chance__describe {
+  width: 100%;
+  margin-top: 56px;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  z-index: 2;
+}
+
+.last-chance__results {
+  width: 100%;
+  margin-top: 14px;
+  background: rgba(243, 243, 242, 0.8);
+  border-radius: 20px;
+  padding: 30px 14px;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.last-chance__button {
+  margin-top: 33px;
+  z-index: 2;
+}
+
+.last-chance__lightning--right {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 123px;
+  height: 211px;
+  background-image: url('../images/lightning_PNG9R.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  z-index: 1;
+}
+
+.last-chance__lightning--left {
+  position: absolute;
+  left: 0;
+  top: 274px;
+  width: 127px;
+  height: 227px;
+  background-image: url('../images/lightning_PNG9L.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  z-index: 1;
+}

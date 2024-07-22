@@ -1,5 +1,5 @@
 .page {
-  
+  position: relative;
 }
 
 .page-header {
@@ -18,4 +18,12 @@
   overflow: hidden;
 
   /* height: calc(100dvh - 46px); */
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }

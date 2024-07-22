@@ -14,3 +14,8 @@
   background: radial-gradient(50% 50% at 50% 50%, rgb(255, 199, 0) 0%, rgb(255, 199, 0) 100%);
   color: #0d0c11;
 }
+
+.button--permanent {
+  color: white;
+  border: 1px solid white;
+}
