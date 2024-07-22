@@ -1,0 +1,39 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.aside__header-icon {
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: 13px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.aside__header-icon--close {
+  width: 28px;
+  height: 28px;
+  background-image: url('../icons/close.svg');
+}
+
+.aside__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 27px;
+  margin-top: 67px;
+}
+
+.aside__nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+}
