@@ -1,0 +1,24 @@
+.advices {
+  height: 509px;
+  padding: 38px 11px;
+  background: #fff;;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advices__describe {
+  font-size: 16px;
+  line-height: 24px;
+  color: #272727;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.advices__describe--accent {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+

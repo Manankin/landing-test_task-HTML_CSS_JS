@@ -1,0 +1,30 @@
+.header {
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-inline: 15px;
+}
+
+.header__burger {
+  width: 24px;
+  height: 16px;
+  
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon--burger {
+  background-image: url(../icons/burger.svg);
+  width: 100%;
+  height: 100%;
+}
+
+.icon--go-top {
+  width: 16px;
+  height: 16px;
+  background-image: url(../icons/go-top.svg);
+}

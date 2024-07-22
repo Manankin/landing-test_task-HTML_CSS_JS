@@ -1,0 +1,56 @@
+.about-test {
+  height: 339px;
+  background-image: url('../images/image.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 83px;
+}
+
+.about-test__wrapper {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+
+  /* background: radial-gradient(#2950C2FF 100%, #265BC7F5 96%, #2762BB00 0%); */
+  /* background-position: center; */
+}
+
+.about-test__describe {
+  /* position: relative; */
+  display: block;
+  margin-bottom: 28px;
+  margin-top: auto;
+  /* margin-top: 83px; */
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.about-test__describe::before {
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: -12px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../icons/qoutes-open.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-test__describe::after {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  right: -12px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../icons/quotes-close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
