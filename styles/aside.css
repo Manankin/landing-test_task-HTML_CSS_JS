@@ -37,3 +37,7 @@
   text-transform: uppercase;
   color: #fff;
 }
+
+.nav__link:hover {
+  color: #f4ce0c;
+}

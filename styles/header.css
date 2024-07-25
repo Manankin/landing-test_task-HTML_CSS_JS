@@ -1,6 +1,8 @@
 .header {
+  position: relative;
   background-color: #272727;
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 9px;
   padding-inline: 15px;
@@ -9,7 +11,18 @@
 .header__burger {
   width: 24px;
   height: 16px;
-  
+}
+
+.header__image {
+  height: 46px;
+  width: 48px;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
 }
 
 .icon {

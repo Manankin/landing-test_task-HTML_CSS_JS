@@ -1,0 +1,267 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__progress {
+  width: 260px;
+  height: 12px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 13px;
+  background: #f2f3f3;
+  opacity: 0.59;
+}
+
+.content__progress--1 {
+  width: 16px;
+  height: 12px;
+  border-radius: 10px;
+  background-color:#3bde7c;
+  /* background-image: url('../icons/test-progress-1.svg'); */
+}
+
+.content__question {
+  /* margin-top: 100px; */
+  /* align-self: center; */
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.content__question--7 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.content__question--10 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content__response {
+  /* margin-top: 38px; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content__response--colors {
+  margin-top: 10px;
+}
+
+.content__logic-response {
+  display: flex;
+  gap: 29px;
+  align-items: center;
+  justify-content: center;
+}
+
+.response-field {
+  position: relative;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: start;
+  /* padding-left: 94px; */
+}
+
+.response-field--3x {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  /* line-height: 20px; */
+  text-align: start;
+}
+
+.response-field--bgc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: #f2f3f3;
+  opacity: 0.15;
+}
+
+.content__button {
+  /* margin-top: auto; */
+  margin-bottom: 25px;
+}
+
+input[type="radio"] {
+  width: 0;
+  opacity: 0.5;
+}
+
+.input-label {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  /* height: 50px; */
+  text-align: start;
+  padding-left: 94px;
+  left: 0;
+}
+
+.input-label--3x {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: start;
+  padding-left: 94px;
+  left: 0;
+}
+
+.input-label::before {
+  content: '';
+  position: absolute;
+  /* top: 15px; */
+  top: calc(50% - 10px);
+
+  left: 35px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.input-label--3x::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 35px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input[type="radio"]:checked ~ .response-field--bgc {
+  background: #FFC700;
+  opacity: 1;
+  z-index: 0;
+}
+
+input[type="radio"]:checked ~ .input-label {
+  color: #000;
+
+}
+
+input[type="radio"]:checked ~ .input-label::before {
+  border: 1px solid black;
+  background-color: #2950C2;
+}
+
+.color-select {
+  /* box-sizing: unset; */
+  width: 100%;
+  padding: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(75px, 1fr));
+  gap: 20px;
+}
+
+.color-select__item {
+  width: 100%;
+  aspect-ratio: 1/1;
+  box-sizing: unset;
+  overflow: hidden;
+}
+
+.color-select__item > input {
+}
+
+.color-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.color-select__item--1 {
+  background: #A8A8A8;
+}
+
+.color-select__item--2 {
+  background: #0000a9;
+}
+
+.color-select__item--3 {
+  background: #00a701;
+}
+
+.color-select__item--4 {
+  background: #f60100;
+}
+
+.color-select__item--5 {
+  background: #fdff19;
+}
+
+.color-select__item--6 {
+  background: #a95403;
+}
+
+.color-select__item--7 {
+  background: #000;
+}
+
+.color-select__item--8 {
+  background: #850068;
+}
+
+.color-select__item--9 {
+  background: #46b2ac;
+}
+
+.logic-response--field {
+  position: relative;
+  width: 42px;
+  aspect-ratio: 1/1;
+}
+
+.logic-response--field--bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.logic-response--field--value {
+  position: relative;
+  color: #000;
+  text-align: center;
+  line-height: 42px;
+  z-index: 2;
+}
+
+.logic-response:checked ~ .logic-response--field--bg {
+  border: 6px solid #FFC700;
+}
