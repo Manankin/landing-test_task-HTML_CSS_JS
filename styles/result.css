@@ -1,0 +1,151 @@
+.test-result {
+  position: relative;
+  height: 100dvh;
+  background: #181818;
+}
+
+.test-result__header {
+  height: 46px;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.test-result__content {
+  position: relative;
+  min-height: calc(100dvh - 46px);
+  background-image: url('../images/pure-galaxy.webp');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test-result__title {
+  margin-top: 26px;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.test-result__describe {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.test-result__get {
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.test-result__attention {
+  margin-top: 12px;
+  padding: 15px 12px 10px;
+  background: #1c2741;
+  border-radius: 6px;
+  width: fit-content;
+
+  font-size: 8px;
+  line-height: 14px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.test-resilt__reminder {
+  margin-top: 12px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.test-result__timer {
+  font-size: 11px;
+  line-height: 30px;
+}
+
+.test-result__call {
+  margin-top: 8px;
+  padding: 32px 16px;
+  z-index: 2;
+}
+
+.test-result__footer {
+  height: 19px;
+  font-size: 7px;
+  line-height: 130%;
+  letter-spacing: 0.43em;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 142px;
+  margin-bottom: 0;
+  margin-inline: 13px;
+}
+
+.test-result__lightning--left {
+  z-index: 1;
+  background-image: url('../images/lightning_left.webp');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 72px;
+  left: 0;
+  width: 111px;
+  height: 231px;
+}
+
+.test-result__lightning--right {
+  z-index: 1;
+  background-image: url('../images/lightning_right.webp');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 368px;
+  right: 0;
+  width: 111px;
+  height: 231px;
+}
+
+.call-block {
+  display: flex;
+  gap: 18px;
+  /* justify-content: center; */
+  align-items: center;
+  background: #eb1b00;
+  border-radius: 5px;
+
+  .call-block__icon {
+    width: 29px;
+    height: 29px;
+    background-image: url('../icons/phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .call-block__info {
+    font-weight: 900;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+  }
+}
+

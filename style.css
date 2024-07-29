@@ -11,3 +11,72 @@
 @import './styles/aside.css';
 @import './styles/page-test.css';
 @import './styles/content.css';
+@import './styles/result.css';
+
+.page {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-test {
+  display: none;
+}
+
+.page-result {
+  display: none;
+}
+
+.divider {
+  width: 100%;
+  height: 4px;
+  background: #f2f3f3;
+  opacity: 0.15;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.timer {
+  font-size: 20px;
+}
+
+.progress {
+  width: 0;
+  height: 12px;
+  background: #3bde7c;
+  border-radius: 6px;
+}
+
+.swiper-pagination {
+  position: static;
+  display: block;
+  width: 260px;
+  height: 12px;
+  top: 16px;
+  left: calc((100vw - 260px)/2);
+  right: calc((100vw - 260px)/2);
+  border-radius: 10px;
+  background: #ccc;
+}
+
+.swiper-pagination .swiper-pagination-progressbar-fill {
+  background-color: #3bde7c;
+  border-radius: 10px;
+}
+
+.swiper-button-next {
+  position: static;
+  width: fit-content;
+  height: fit-content;
+  right: auto;
+  left: auto;
+  margin-top: 0;
+}
+
+.swiper-button-next:after {
+  content: none;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
