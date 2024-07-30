@@ -1,6 +1,9 @@
 'use strict';
+// https://swapi.dev/api/people/1/
 
 import getProgressBar from "./features/progress-bar.js";
+import runTest from "./features/runTest.js";
+import comeBackToMain from "./features/comeBackToMain.js";
 
 const testSlider = new Swiper('.task-list', {
   navigation: {
@@ -14,14 +17,17 @@ const testSlider = new Swiper('.task-list', {
 
 const PROGRESS_BAR_WIDTH = getComputedStyle(document.querySelector('.swiper-pagination')).width;
 const TOTAL_SLIDES_AMOUNT = document.querySelectorAll('.swiper-slide').length;
+const LESS_THEN_TEN = 10;
 
 const page = document.querySelector('.page');
 const mainPage = document.querySelector('.page-main');
 const testPage = document.querySelector('.page-test');
 const resultPage = document.querySelector('.page-result');
 const buttonStart = document.querySelectorAll('.start-test');
-const backToMain =document.querySelector('.return-to-main');
+const backToMain = document.querySelector('.return-to-main');
+const transferToAbout = document.querySelector('.about');
 const timer = document.querySelector('.timer');
+const callButton = document.querySelector('.call-block');
 
 let timeStart = 600;
 
@@ -29,7 +35,7 @@ function timeCountDown() {
   const minutes = Math.floor(timeStart / 60);
   const seconds = timeStart % 60;
 
-  timer.innerHTML = `${minutes < 10 ? '0'+minutes : minutes}:${seconds < 10 ? '0'+seconds : seconds}`;
+  timer.innerHTML = `${minutes < LESS_THEN_TEN ? '0'+minutes : minutes}:${seconds < LESS_THEN_TEN ? '0'+seconds : seconds}`;
   timeStart--;
 
   if (timeStart < 0) {
@@ -37,21 +43,16 @@ function timeCountDown() {
   }
 };
 
-// const timeCount = setInterval(timeCountDown, 1000)
+const goToTestPage = () => runTest(mainPage, testPage, testSlider);
+
+const goToMainPage = () => comeBackToMain(mainPage, testPage, resultPage);
 
 buttonStart.forEach(element => {
-  element.addEventListener('click', () => {
-    testSlider.activeIndex = 0;
-    mainPage.style.display = "none";
-    testPage.style.display = "initial";
-  })
+  element.addEventListener('click', goToTestPage)
 });
 
-backToMain.addEventListener('click', () => {
-  testPage.style.display = 'none';
-  resultPage.style.display = 'none';
-  mainPage.style.display = "";
-})
+backToMain.addEventListener('click', goToMainPage)
+transferToAbout.addEventListener('click', goToMainPage)
 
 const progressBar = document.querySelector('.progress');
 let currentSlide = testSlider.activeIndex;
