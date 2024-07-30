@@ -36,9 +36,9 @@
           IQ
         </div>
     
-        <div class="main__button">
-          <div class="button button--yellow merriweather-bold">пройти тест</div>
-        </div>
+        <a href="#page-test" class="main__button">
+          <div class="button button--yellow merriweather-bold start-test">пройти тест</div>
+        </a>
     
         <div class="main__text text pt-serif--bold">
           <span class="text--yellow">И получите рекомендации</span>
@@ -94,7 +94,7 @@
         </div>
   
         <div class="advices__button">
-          <div class="button button--yellow merriweather-bold">пройти тест</div>
+          <div class="button button--yellow merriweather-bold start-test">пройти тест</div>
         </div>
       </section>
   
@@ -121,7 +121,7 @@
         </div>
   
         <div class="last-chance__button">
-          <div class="button button--permanent merriweather-bold">пройти тест</div>
+          <div class="button button--permanent merriweather-bold start-test">пройти тест</div>
         </div>
   
         <div class="last-chance__lightning--left"></div>
@@ -142,13 +142,13 @@
       </a>
     </div>
     <nav class="aside__nav nav">
-      <a href="#" class="nav__link">главная</a>
+      <a href="#" class="nav__link return-to-main">главная</a>
       <a href="#" class="nav__link">информация о тесте</a>
-      <a href="#" class="nav__link">пройти тест</a>
+      <a href="#" class="nav__link start-test" >пройти тест</a>
     </nav>
   </aside>
 
-  <section class="page-test">
+  <section class="page-test" id="page-test">
     <div class="page-test__header header">
       <div class="header__burger icon">
         <a href="#aside-menu">
@@ -368,7 +368,7 @@
               </label>
 
               <label for="46b2acr" class="color-box color-select">
-                <input type="radio" name="color" id="46b2acr" class="select">
+                <input type="radio" name="color" id="46b2acr" class="select-2">
                 <div class="color-select__item color-select__item--9"></div>
                 <span class="color-label"></span>
               </label>
@@ -639,6 +639,6 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="index.js"></script>
+  <script src="index.js" type="module"></script>
 </body>
 </html>

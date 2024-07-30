@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button--yellow {
   background: radial-gradient(50% 50% at 50% 50%, rgb(255, 199, 0) 0%, rgb(255, 199, 0) 100%);
   color: #0d0c11;

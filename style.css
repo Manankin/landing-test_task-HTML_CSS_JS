@@ -14,11 +14,17 @@
 @import './styles/result.css';
 
 .page {
+  position: relative;
   font-family: 'Roboto', sans-serif;
+}
+
+.page-main {
+  display: '';
 }
 
 .page-test {
   display: none;
+
 }
 
 .page-result {
