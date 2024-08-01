@@ -213,6 +213,7 @@
   width: 44px;
   height: 44px;
   color: #000;
+
 }
 
 .task__responses--bgc {
@@ -226,15 +227,17 @@
   opacity: 0.15;
 }
 
-.task__responses--bgc-block {
+/* .task__responses--bgc-block {
   background: #fff;
+  border: 6px solid transparent;
+
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
-}
+} */
 
 .task__picture {
   margin-left: auto;
@@ -422,12 +425,14 @@ input[type="radio"]:checked ~ .input-label::before {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  border: 6px solid transparent;
+
   color: #0d0c11;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 20px;
-  line-height: 44px;
+  /* line-height: 44px; */
 }
 
 
