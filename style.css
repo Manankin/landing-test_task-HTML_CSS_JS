@@ -58,11 +58,15 @@
 .data-key {
   color: #fff;
   text-align: end;
+  margin-left: 12px;
+  overflow: hidden;
 }
 
 .data-value {
   color: #fff;
   text-align: start;
+  margin-right: 12px;
+  overflow: hidden;
 }
 
 .progress {

@@ -33,6 +33,8 @@ const callButton = document.querySelector('.call-block');
 const resultField = document.createElement('div');
 
 let timeStart = 600;
+let timeCount;
+
 
 function timeCountDown() {
   const minutes = Math.floor(timeStart / 60);
@@ -42,7 +44,7 @@ function timeCountDown() {
   timeStart--;
 
   if (timeStart < 0) {
-    clearInterval(timeCountDown)
+    clearInterval(timeCount)
   }
 };
 
@@ -70,24 +72,25 @@ document.querySelector('.swiper-button-next').addEventListener('click', () => {
       testPage.style.display = "none";
       resultPage.style.display = "initial";
 
-      const timeCount = setInterval(timeCountDown, 1000)
+      timeCount = setInterval(timeCountDown, 1000);
     }, 3000)
   }
 });
 
-const resultFromServer = {
-  name: 'Luk Skywaker',
-  sex: 'male',
-  age: 77,
-  ship: 'spaseShip',
-};
+callButton.addEventListener('click', () => {
+  let fetchedData = null;
+  getResult()
+    .then(data => {
+      fetchedData = data;
 
-callButton.addEventListener('click', getResult);
+      Object.entries(fetchedData).forEach(([key, value]) => {
+        if (Object.hasOwnProperty.call(fetchedData, key)) {
+          const newElem = createDataElement(key, value)
 
-Object.entries(resultFromServer).forEach(([key, value]) => {
-  const newElem = createDataElement(key, value)
-
-  resultField.append(newElem);
-})
+          resultField.append(newElem);
+      }})
+    })
+  clearInterval(timeCount);
+});
 
 callButton.after(resultField);
