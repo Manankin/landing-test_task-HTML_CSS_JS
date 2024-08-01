@@ -4,6 +4,8 @@
 import getProgressBar from "./features/progress-bar.js";
 import runTest from "./features/runTest.js";
 import comeBackToMain from "./features/comeBackToMain.js";
+import getResult from "./features/getResult.js";
+import createDataElement from "./features/createDataElement.js";
 
 const testSlider = new Swiper('.task-list', {
   navigation: {
@@ -28,6 +30,7 @@ const backToMain = document.querySelector('.return-to-main');
 const transferToAbout = document.querySelector('.about');
 const timer = document.querySelector('.timer');
 const callButton = document.querySelector('.call-block');
+const resultField = document.createElement('div');
 
 let timeStart = 600;
 
@@ -72,4 +75,19 @@ document.querySelector('.swiper-button-next').addEventListener('click', () => {
   }
 });
 
-// console.log('WTF')
+const resultFromServer = {
+  name: 'Luk Skywaker',
+  sex: 'male',
+  age: 77,
+  ship: 'spaseShip',
+};
+
+callButton.addEventListener('click', getResult);
+
+Object.entries(resultFromServer).forEach(([key, value]) => {
+  const newElem = createDataElement(key, value)
+
+  resultField.append(newElem);
+})
+
+callButton.after(resultField);

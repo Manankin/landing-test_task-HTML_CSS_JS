@@ -46,6 +46,25 @@
   font-size: 20px;
 }
 
+.data-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.data-key {
+  color: #fff;
+  text-align: end;
+}
+
+.data-value {
+  color: #fff;
+  text-align: start;
+}
+
 .progress {
   width: 0;
   height: 12px;
