@@ -71,3 +71,5 @@ document.querySelector('.swiper-button-next').addEventListener('click', () => {
     }, 3000)
   }
 });
+
+// console.log('WTF')
