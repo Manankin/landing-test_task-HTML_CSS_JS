@@ -44,7 +44,7 @@ function timeCountDown() {
   timeStart--;
 
   if (timeStart < 0) {
-    clearInterval(timeCount)
+    clearInterval(timeCountDown)
   }
 };
 
@@ -56,8 +56,8 @@ buttonStart.forEach(element => {
   element.addEventListener('click', goToTestPage)
 });
 
-backToMain.addEventListener('click', goToMainPage)
-transferToAbout.addEventListener('click', goToMainPage)
+backToMain.addEventListener('click', goToMainPage);
+transferToAbout.addEventListener('click', goToMainPage);
 
 const progressBar = document.querySelector('.progress');
 let currentSlide = testSlider.activeIndex;
