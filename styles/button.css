@@ -22,9 +22,19 @@
   border: 1px solid white;
 }
 
+.button--permanent:hover {
+  background: #ffc700;
+  color: #0d0c11;
+}
+
 .button--grey-shadow {
   box-shadow: inset 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   background: #dadada;
   color: #8e8e8e;
   padding-inline: 70px;
+}
+
+.button--grey-shadow:hover {
+  background: #ffc700;
+  color: #0d0c11;
 }

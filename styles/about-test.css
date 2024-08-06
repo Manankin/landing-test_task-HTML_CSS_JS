@@ -11,17 +11,12 @@
   position: relative;
   width: fit-content;
   margin: auto;
-
-  /* background: radial-gradient(#2950C2FF 100%, #265BC7F5 96%, #2762BB00 0%); */
-  /* background-position: center; */
 }
 
 .about-test__describe {
-  /* position: relative; */
   display: block;
   margin-bottom: 28px;
   margin-top: auto;
-  /* margin-top: 83px; */
 
   font-size: 18px;
   line-height: 24px;

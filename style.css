@@ -13,9 +13,14 @@
 @import './styles/content.css';
 @import './styles/result.css';
 
+html, body {
+  overflow-x: hidden;
+}
+
 .page {
   position: relative;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 .page-main {

@@ -2,7 +2,6 @@
   position: relative;
   background-color: #272727;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 9px;
   padding-inline: 15px;
@@ -28,6 +27,10 @@
 .icon {
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.icon:hover {
+  cursor: pointer;
 }
 
 .icon--burger {

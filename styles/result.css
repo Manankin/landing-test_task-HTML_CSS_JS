@@ -127,7 +127,6 @@
 .call-block {
   display: flex;
   gap: 18px;
-  /* justify-content: center; */
   align-items: center;
   background: #eb1b00;
   border-radius: 5px;

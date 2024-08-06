@@ -1,13 +1,11 @@
 .main {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding-top: 27px;
 
   background-image: url('../images/galaxy.webp');
   background-position: center top;
-
   height: calc(100dvh - 46px);
 }
 
