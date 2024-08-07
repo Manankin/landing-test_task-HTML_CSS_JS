@@ -85,6 +85,11 @@ transferToAbout.addEventListener('click', () => {
   goToPage(prevPage, currentPage, mainPage);
 });
 
+
+console.log('====================================');
+console.log(prevPage);
+console.log(currentPage);
+console.log('====================================');
 const progressBar = document.querySelector('.progress');
 currentSlide = testSlider.activeIndex;
 progressBar.style.width = getProgressBar(currentSlide, TOTAL_SLIDES_AMOUNT, PROGRESS_BAR_WIDTH)
